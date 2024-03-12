@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 75px;
+    background-color: #191f36;
+    width: 100%;
+    position: fixed;
+}
+.logo{
+    font-size: 20px;
+}
+header a{
+    color: white;
+}
+header a:hover{
+    color: #59B2F4;
+}
+#menu{
+    color: white;
+    display: none;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 65px;
+}
+.home{
+    min-height: 100%;
+    background-color: #191f36;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 75px;
+}
+.home .info{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 25px;
+}
+.home .info h1{
+    font-size: 50px;
+}
+.home .info h2{
+    font-size: 30px;
+}
+.home .info p{
+    font-size: 16px;
+}
+.home .info .socialMedia{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home .info .socialMedia a{
+    color: #59B2F4;
+    border: 2px solid #59B2F4;
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 15px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.home .info .socialMedia i{
+    width: 13px;
+    text-align: center;
+}
+.home .info .socialMedia a:hover{
+    color: #191f36;
+    background-color: #59B2F4;
+}
+.home .info button{
+    width: 200px;
+    padding: 10 50;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #59B2F4;
+    color: #59B2F4;
+    margin-top: 20px;
+}
+.home .info button:hover{
+    color: #191f36;
+    background-color: #59B2F4;
+}
+.home .photo{
+    width: 30%;
+}
+.home .photo img{
+    width: 100%;
+}
+.about{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #262B40;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.about .aboutPhoto{
+    width: 40%;
+    display: flex;    
+    justify-content: right;
+    align-items: center;
+    padding-top: 100px;
+}
+.about .aboutPhoto img{
+    width: 75%;
+}
+.about .aboutInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+.about h1{
+    font-size: 50px;
+}
+.about h2{
+    font-size: 30px;
+}
+.about p{
+    font-size: 16px;
+}
+.about .aboutInfo button{
+    width: 200px;
+    padding: 10 50;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #59B2F4;
+    color: #59B2F4;
+    margin-top: 20px;
+}
+.about .aboutInfo button:hover{
+    color: #262B40;
+    background-color: #59B2F4;
+}
+.skills{
+    min-height: 100vh;
+    background-color: #191f36;
+    color: white;
+    padding-top: 100px;
+}
+.skills h1{
+    font-size: 50px;
+}
+.skills .skillCards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 70px;
+    gap: 30px;
+    justify-content: center;
+}
+.skills .skillCards .skillCard{
+    width: 30%;
+    background-color: white;
+    color: #191f36;
+    padding: 10px;
+}
+.skills .skillCards .skillCard:hover{
+    box-shadow: 3px 3px #59B2F4;
+}
+.projects{
+    min-height: 100vh;
+    background-color: #262B40;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+.projects .projectCards{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 5%;
+}
+.projects .projectCards .projectCard{
+    width: 30%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.projects .projectCards .projectCard h1{
+    display: none;
+}
+.projects .projectCards .projectCard:hover .projects .projectCards .projectCard h1{
+    display: block;
+}
+.contact{
+    height: 100vh;
+    background-color: #191f36;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.contact .contactForm{
+    width: 80%;
+}
+.contact .contactForm .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact .details input{
+    width: 45%;
+    height: 50px;
+    margin: 10px;
+    background-color: #262B40;
+    border: none;
+    border-radius: 10px;
+}
+.contact input::placeholder{
+    padding: 10px;
+    font-size: 20px;
+}
+.contact .contactForm .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact .content input{
+    width: 94%;
+    height: 250px;
+    margin: 10px;
+    background-color: #262B40;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.contact button{
+    width: 200px;
+    padding: 10 50;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #59B2F4;
+    color: #59B2F4;
+    margin-top: 20px;
+}
+.contact button:hover{
+    color: #262B40;
+    background-color: #59B2F4;
+
+}
+@media (max-width:1100px) {
+    .home .photo{
+        width: 45%;
+    }
+    .skills .skillCards .skillCard{
+        width: 45%;
+    }
+    .projects .projectCards{
+        width: 90%;
+    }
+}
+@media (max-width:900px) {
+    nav{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .skills .skillCards .skillCard{
+        width: 80%;
+    }
+    .contact .contactForm{
+        width: 90%;
+    }
+    .projects .projectCards .projectCard{
+        width: 45%;
+    }
+}
+@media (max-width:750px) {
+    .home{
+        flex-direction: column;
+        padding: 10 50;
+    }
+    .home .photo{
+        order: -1;
+        width: 75%;
+        padding-top: 100px;
+    }
+    .home .info{
+        width: 90%;
+        padding-bottom: 100px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .aboutPhoto{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .aboutPhoto img{
+        width: 75%;
+    }
+    .about .aboutInfo{
+        width: 90%;
+        padding-bottom: 100px;
+    }
+    .contact .contactForm .details input{
+        width: 94%;
+    }
+    .projects .projectCards{
+        justify-content: center;
+    }
+    .projects .projectCards .projectCard{
+        width: 80%;
+    }
+}
